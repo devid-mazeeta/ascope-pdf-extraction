@@ -1,0 +1,58 @@
+{
+    "2017EO.html": {
+        "Policy No": "Policy\\s*Number\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "Renewal No": "Renewal\\s*of\\s*Number\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "Name Insured": "NAMED\\s*INSURED\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "Address": "STREET\\s*ADDRESS\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "City | State | Zip": "<pos>0</pos>STREET\\s*ADDRESS\\s*:\\s*<[\\w\\W]*?>\\s*([a-z\\s]+\\s*\\,?\\s+[a-z\\s]+\\s+[\\d\\-]{5,10})\\s*<",
+        "Start Date": "Inception\\s*Date\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "Expiry Date": "Expiration\\s*Date\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "LOL - Each Claim": "<pos>0</pos>Each\\s*Claim\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "LOL - Aggregate": "<pos>0</pos>Aggregate\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*<\/span>",
+        "Claim Exp. - Each Claim": "<pos>1</pos>Each\\s*Claim\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "Claim Exp. - Aggregate": "<pos>1</pos>Aggregate\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "Deductible - Each Claim": ">\\s*Each\\s*Claim\\s*:\\s*\\$\\s*([\\d_]+?)\\s*Aggregate\\s*:\\s*\\$\\s*[\\d_]+?\\s*<",
+        "Deductible - Aggregate": ">\\s*Each\\s*Claim\\s*:\\s*\\$\\s*[\\d_]+?\\s*Aggregate\\s*:\\s*\\$\\s*([\\d_]+?)\\s*<",
+        "Retroactive Date": "RETROACTIVE\\s*DATE\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "Premium": "PREMIUM\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "Endorsement(s)": "Endorsement\\(s\\)\\s*\\.?\\s*(<[\\w\\W]*?>)\\s*8\\s*\\.\\s*PRODUCER",
+        "Producer Name": "PRODUCER\\s*NAME\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "Producer Address": "<pos>1</pos>STREET\\s*ADDRESS\\s*:\\s*<[\\w\\W]*?>\\s*([^>]+?\\s*<\/span>\\s*<[\\w\\W]*?>\\s*[^>]+?)\\s*</span>"
+    },
+    "Brian J Elliott E&O 2017.html": {
+        "Policy No": "<pos>0</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Renewal No": "<pos>1</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Name Insured": "<pos>4</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Address": "<pos>5</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "City | State | Zip": "<pos>6</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Start Date": "<pos>7</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Expiry Date": "<pos>8</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "LOL - Each Claim": "<pos>9</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "LOL - Aggregate": "<pos>11</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Claim Exp. - Each Claim": "<pos>10</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Claim Exp. - Aggregate": "<pos>12</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Deductible - Each Claim": "<pos>13</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Deductible - Aggregate": "<pos>14</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Retroactive Date": "<pos>16</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Premium": "<pos>15</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Endorsement(s)": [
+            "<pos>17</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+            "<pos>18</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>"
+        ],
+        "Producer Name": "<pos>2</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>",
+        "Producer Address": "<pos>3</pos><div[^>]*?>\\s*<span[^>]*?>\\s*([^>]*?)\\s*</span>"
+    },
+    "MO License 6.30.10.html": {
+        "Name": ">\\s*\\)\\s*<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "Address": "<span[^>]*?>\\s*([^>]*?)\\s*(?:</?(?:span|div)[^>]*?>\\s*){4}[a-z\\s]+\\s+[a-z\\s]+\\s+[\\d\\-]{5,10}\\s*<",
+        "City | State | Zip": ">\\s*([a-z\\s]+\\s*\\,?\\s+[a-z\\s]+\\s+[\\d\\-]{5,10})\\s*<",
+        "License No": "LICENSE\\s*NO\\.\\s*([^>]*?)\\s*</span>",
+        "Expiry Date": ">VALID\\s*THROUGH\\s*([^>]*?)\\s*</span>"
+    },
+    "W-9 2012.html": {
+        "Name": ">\\s*Name[^>]*?<[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "Address": ">\\s*Address[^>]*?<[\\w\\W]*?>\\s*(?:<div[^>]*?>\\s*<span[^>]*?>[^>]*?</span>\\s*</div>\\s*){3}[\\w\\W]*?>([^>]+?)\\s*</span>",
+        "City | State | Zip": ">\\s*City[^>]*?<[\\w\\W]*?</span>\\s*</div>[\\w\\W]*?>\\s*([^>]+?)\\s*</span>",
+        "Employer Identification No": ">\\s*number\\s*to\\s*enter[^>]*?>([\\w\\W]*?>)\\s*Part\\s*II\\s*<"
+    }
+}
